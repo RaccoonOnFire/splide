@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./dist/css/splide.min.css" />
+        <link rel="stylesheet" href="./dist/css/splide.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="">
+            <div class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li
+                            class="splide__slide splide__slide-img"
+                            data-splide-interval="8000"
+                        >
+                            <img
+                                class="header__slide-image"
+                                src="./img/header1.jpg"
+                                alt=""
+                                width="100%"
+                                height="auto"
+                            />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="8000">
+                            <img
+                                src="./img/header1.jpg"
+                                alt=""
+                                width="100%"
+                                height="auto"
+                            />
+                        </li>
+                        <li class="splide__slide" data-splide-interval="8000">
+                            <img
+                                src="./img/header1.jpg"
+                                alt=""
+                                width="100%"
+                                height="auto"
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__overlay">
+                    <img
+                        class="header__logo"
+                        src="./img/logo.png"
+                        alt=""
+                        width="186px"
+                        height="auto"
+                    />
+                    <div class="header__slide-content">
+                        <h1 class="header__title">Serdecznie zapraszamy</h1>
+                        <h2 class="header__subtitle">Zapoznaj się<br />z naszą ofertą</h2>
+                        <div class="header__conte">
+                            <button></button>
+                            <button></button>
+                        </div>
+                        nt-btns
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="./dist/js/splide.min.js"></script>
+        <script>
+            var splide = new Splide(".splide", {
+                rewind: true,
+                speed: 800,
+                type: "loop",
+                autoplay: "true",
+                perPage: 1,
+                pauseOnHover: false,
+            });
+            splide.mount();
+        </script>
+    </body>
+</html>
